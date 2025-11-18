@@ -18,9 +18,14 @@
 
 --shadow-card:'0px 1px 2px 0px rgba(0, 0, 0, 0.05)';
 
---color-gray-1000:#D5DAE1;
---color-gray-1100:#636363;
 --color-blue-1000:#2b77e7;
 --color-black-1000:#000;
 --color-black-1100:#1D2235;
+}
+
+/* custom components */
+@layer{
+  .blue-btn{
+    @apply font-poppins text-white bg-blue-1000 box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none
+  }
 }
