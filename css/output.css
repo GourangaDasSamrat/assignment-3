@@ -963,6 +963,11 @@
       text-align: start;
     }
   }
+  .md\:text-black-1000 {
+    @media (width >= 48rem) {
+      color: var(--color-black-1000);
+    }
+  }
   .md\:text-blue-1000 {
     @media (width >= 48rem) {
       color: var(--color-blue-1000);
