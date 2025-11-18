@@ -1,1 +1,26 @@
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
+
+/* custom font */
+@font-face {
+  font-family: "worksans";
+  src: url("./assets/fonts/WorkSans-Regular.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+/* custom theme */
+@theme{
+--font-worksans:'worksans','sans-serif';
+--font-poppins:'poppins','sans-serif';
+
+--shadow-card:'0px 1px 2px 0px rgba(0, 0, 0, 0.05)';
+
+--color-gray-1000:#D5DAE1;
+--color-gray-1100:#636363;
+--color-blue-1000:#2b77e7;
+--color-black-1000:#000;
+--color-black-1100:#1D2235;
+}

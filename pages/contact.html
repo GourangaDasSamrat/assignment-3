@@ -1,17 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gouranga Das Samrat | Full Stack Web Developer and UI/UX Designer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Gouranga Das Samrat</title>
     <!-- favicon -->
-     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <!-- tailwind css -->
-     <link rel="stylesheet" href="../css/output.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
     <!-- navbar start -->
 
+    <nav
+      class="font-worksans bg-neutral-primary border-default fixed start-0 top-0 z-20 w-full border-b"
+    >
+      <div
+        class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+      >
+        <a
+          href="../index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="../assets/images/logo.webp" class="h-7" alt="Logo" />
+          <span
+            class="text-black-1000 self-center text-xl font-semibold whitespace-nowrap"
+            >Gouranga</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="text-body rounded-base hover:bg-neutral-secondary-soft hover:text-black-1000 focus:ring-neutral-tertiary inline-flex h-10 w-10 items-center justify-center p-2 text-sm focus:ring-2 focus:outline-none md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="h-6 w-6"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="border-default rounded-base bg-neutral-secondary-soft md:bg-neutral-primary mt-4 flex flex-col border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="blue-1000 md:text-blue-1000 block rounded px-3 py-2 text-white md:bg-transparent md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./skills.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="./experiences.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Experiences</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="./certifications.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Certifications</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- navbar end -->
-</body>
+
+    <!-- contact form start-->
+
+    <form class="mx-auto mt-26 max-w-md">
+      <div class="group w-50% relative z-0 mb-5">
+        <input
+          type="email"
+          name="floating_email"
+          id="floating_email"
+          class="text-heading border-default-medium focus:border-brand peer block w-full appearance-none border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:ring-0 focus:outline-none"
+          placeholder=" "
+          required
+        />
+        <label
+          for="floating_email"
+          class="text-body peer-focus:text-fg-brand absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+          >Email address</label
+        >
+      </div>
+      <div class="group w-50% relative z-0 mb-5">
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          name="floating_phone"
+          id="floating_phone"
+          class="text-heading border-default-medium focus:border-brand peer block w-full appearance-none border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:ring-0 focus:outline-none"
+          placeholder=" "
+          required
+        />
+        <label
+          for="floating_phone"
+          class="text-body peer-focus:text-fg-brand absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+          >Phone number</label
+        >
+      </div>
+      <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="group relative z-0 mb-5 w-full">
+          <input
+            type="text"
+            name="floating_first_name"
+            id="floating_first_name"
+            class="text-heading border-default-medium focus:border-brand peer block w-full appearance-none border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:ring-0 focus:outline-none"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_first_name"
+            class="text-body peer-focus:text-fg-brand absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+            >First name</label
+          >
+        </div>
+        <div class="group relative z-0 mb-5 w-full">
+          <input
+            type="text"
+            name="floating_last_name"
+            id="floating_last_name"
+            class="text-heading border-default-medium focus:border-brand peer block w-full appearance-none border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm focus:ring-0 focus:outline-none"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_last_name"
+            class="text-body peer-focus:text-fg-brand absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
+            >Last name</label
+          >
+        </div>
+      </div>
+      <label for="message" class="text-heading mb-2.5 block text-sm font-medium"
+        >Your message</label
+      >
+      <textarea
+        id="message"
+        rows="4"
+        class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand placeholder:text-body block w-full border p-3.5 text-sm shadow-xs"
+        placeholder="Write your thoughts here..."
+      ></textarea>
+
+      <div class="grid md:grid-cols-2 md:gap-6"></div>
+      <button
+        type="submit"
+        class="bg-brand hover:bg-brand-strong focus:ring-brand-medium rounded-base mt-3 box-border border border-transparent px-4 py-2.5 text-sm leading-5 font-medium text-white shadow-xs focus:ring-4 focus:outline-none"
+      >
+        Submit
+      </button>
+    </form>
+
+    <!-- contact form end-->
+
+    <!-- footer start -->
+
+    <footer class="font-worksans bg-neutral-primary-soft mt-26">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="../index.html" class="flex items-center">
+              <img
+                src="../assets/images/logo.webp"
+                class="me-3 h-7"
+                alt="Logo"
+              />
+              <span
+                class="text-heading self-center text-2xl font-semibold whitespace-nowrap"
+                >Gouranga</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
+            <div>
+              <h2 class="text-heading mb-6 text-sm font-semibold uppercase">
+                Resources
+              </h2>
+              <ul class="text-body font-medium">
+                <li class="mb-4">
+                  <a href="./blog.html" class="hover:underline">Blog</a>
+                </li>
+                <li>
+                  <a href="./services.html" class="hover:underline">Services</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="text-heading mb-6 text-sm font-semibold uppercase">
+                Follow me
+              </h2>
+              <ul class="text-body font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/GourangaDasSamrat"
+                    class="hover:underline"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/gouranga-das-samrat/"
+                    class="hover:underline"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="text-heading mb-6 text-sm font-semibold uppercase">
+                Legal
+              </h2>
+              <ul class="text-body font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="border-default my-6 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-body text-sm sm:text-center"
+            >&copy 2025
+            <a href="https://gouranga-das.netlify.app/" class="hover:underline"
+              >Gouranga Das Samrat</a
+            >. All Rights Reserved.
+          </span>
+          <div class="mt-4 flex sm:mt-0 sm:justify-center">
+            <a
+              href="https://www.linkedin.com/in/gouranga-das-samrat/"
+              class="text-body hover:text-heading"
+            >
+              <img src="../assets/icons/linkedin.svg" alt="Linkedin" />
+              <span class="sr-only">Linkedin</span>
+            </a>
+            <a
+              href="https://gouranga-das.netlify.app/links"
+              class="text-body hover:text-heading ms-5"
+            >
+              <img src="../assets/icons/internet.svg" alt="Portfolio" />
+              <span class="sr-only">Portfolio</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+    <!-- flowbite js -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
 </html>
