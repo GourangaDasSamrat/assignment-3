@@ -1,125 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills | Gouranga Das Samrat</title>
     <!-- favicon -->
-     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <!-- tailwind css -->
-     <link rel="stylesheet" href="../css/output.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
     <!-- navbar start -->
 
     <nav
-    class="font-worksans bg-neutral-primary border-default fixed start-0 top-0 z-20 w-full border-b"
-  >
-    <div
-      class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+      class="font-worksans bg-neutral-primary border-default fixed start-0 top-0 z-20 w-full border-b"
     >
-      <a
-        href="../index.html"
-        class="flex items-center space-x-3 rtl:space-x-reverse"
+      <div
+        class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
       >
-        <img src="../assets/images/logo.webp" class="h-7" alt="Logo" />
-        <span
-          class="text-black-1000 self-center text-xl font-semibold whitespace-nowrap"
-          >Gouranga</span
+        <a
+          href="../index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
         >
-      </a>
-      <button
-        data-collapse-toggle="navbar-default"
-        type="button"
-        class="text-body rounded-base hover:bg-neutral-secondary-soft hover:text-black-1000 focus:ring-neutral-tertiary inline-flex h-10 w-10 items-center justify-center p-2 text-sm focus:ring-2 focus:outline-none md:hidden"
-        aria-controls="navbar-default"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="h-6 w-6"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
+          <img src="../assets/images/logo.webp" class="h-7" alt="Logo" />
+          <span
+            class="text-black-1000 self-center text-xl font-semibold whitespace-nowrap"
+            >Gouranga</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="text-body rounded-base hover:bg-neutral-secondary-soft hover:text-black-1000 focus:ring-neutral-tertiary inline-flex h-10 w-10 items-center justify-center p-2 text-sm focus:ring-2 focus:outline-none md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
         >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-width="2"
-            d="M5 7h14M5 12h14M5 17h14"
-          />
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul
-          class="border-default rounded-base bg-neutral-secondary-soft md:bg-neutral-primary mt-4 flex flex-col border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
-        >
-          <li>
-            <a
-              href="../index.html"
-              class="blue-1000 md:text-blue-1000 block rounded px-3 py-2 text-white md:bg-transparent md:p-0"
-              aria-current="page"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="./skills.html"
-              class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
-              >Skills</a
-            >
-          </li>
-          <li>
-            <a
-              href="./experiences.html"
-              class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
-              >Experiences</a
-            >
-          </li>
-          <li>
-            <a
-              href="./projects.html"
-              class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a
-              href="./services.html"
-              class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="./blog.html"
-              class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="./certifications.html"
-              class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
-              >Certifications</a
-            >
-          </li>
-          <li>
-            <a
-              href="./contact.html"
-              class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
-              >Contact</a
-            >
-          </li>
-        </ul>
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="h-6 w-6"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h14"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="border-default rounded-base bg-neutral-secondary-soft md:bg-neutral-primary mt-4 flex flex-col border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="blue-1000 md:text-blue-1000 block rounded px-3 py-2 text-white md:bg-transparent md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./skills.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="./experiences.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Experiences</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="./certifications.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Certifications</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="text-black-1000 hover:bg-neutral-tertiary md:hover:text-blue-1000 block rounded px-3 py-2 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
     <!-- navbar end -->
+
+    <!-- main content start -->
+    <div class="font-poppins mx-5 mt-26 text-center md:mx-46 md:text-start">
+      <h1 class="text-5xl font-semibold">
+        Hello, I'm <span class="blue-gradient_text">Gouranga</span> 👋
+      </h1>
+      <p class="mt-4">
+        Full-Stack Web Developer & UI/UX Designer passionate about building
+        modern, scalable, and user-centric web applications. With hands-on
+        experience in MERN Stack, Next.js, and TypeScript, I specialize in
+        turning ideas into interactive, high-performance digital experiences.
+      </p>
+      <a href="../assets/cv.pdf">
+        <button class="blue-btn mt-5">Download CV</button>
+      </a>
+      <h2 class="mt-6 text-2xl font-semibold">My Skills</h2>
+      <div class="mt-12 flex flex-wrap gap-12">
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/html.svg"
+                alt="HTML"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/css.svg"
+                alt="CSS"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/javascript.svg"
+                alt="JavaScript"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/typescript.svg"
+                alt="TypeScript"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/bootstrap.svg"
+                alt="Bootstrap"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/react.svg"
+                alt="React JS"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/tailwindcss.svg"
+                alt="Tailwind CSS"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/redux.svg"
+                alt="Redux"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/nextjs.svg"
+                alt="Next JS"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/nodejs.svg"
+                alt="Node JS"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/express.svg"
+                alt="Express JS"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/git.svg"
+                alt="Git"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/github.svg"
+                alt="GitHub"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/mongodb.svg"
+                alt="Mongo DB"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="block-container h-20 w-20">
+          <div class="btn-back rounded-xl">
+            <div class="btn-front flex items-center justify-center rounded-xl">
+              <img
+                class="h-1/2 w-1/2 object-contain"
+                src="../assets/icons/mysql.svg"
+                alt="MySQL"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main content end -->
+
     <!-- footer start -->
 
     <footer class="font-worksans bg-neutral-primary-soft mt-26">
@@ -148,9 +338,7 @@
                   <a href="./blog.html" class="hover:underline">Blog</a>
                 </li>
                 <li>
-                  <a href="./services.html" class="hover:underline"
-                    >Services</a
-                  >
+                  <a href="./services.html" class="hover:underline">Services</a>
                 </li>
               </ul>
             </div>
@@ -220,6 +408,6 @@
 
     <!-- footer end -->
     <!-- flowbite js-->
-    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-</body>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
 </html>

@@ -12,20 +12,60 @@
 }
 
 /* custom theme */
-@theme{
---font-worksans:'worksans','sans-serif';
---font-poppins:'poppins','sans-serif';
+@theme {
+  --font-worksans: "worksans", "sans-serif";
+  --font-poppins: "poppins", "sans-serif";
 
---shadow-card:'0px 1px 2px 0px rgba(0, 0, 0, 0.05)';
+  --shadow-card: "0px 1px 2px 0px rgba(0, 0, 0, 0.05)";
 
---color-blue-1000:#2b77e7;
---color-black-1000:#000;
---color-black-1100:#1D2235;
+  --color-blue-1000: #2b77e7;
+  --color-black-1000: #000;
+  --color-black-1100: #1d2235;
 }
 
 /* custom components */
-@layer{
-  .blue-btn{
-    @apply font-poppins text-white bg-blue-1000 box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none
+@layer {
+  .blue-btn {
+    @apply font-poppins bg-blue-1000 hover:bg-brand-strong focus:ring-brand-medium rounded-base box-border border border-transparent px-4 py-2.5 text-sm leading-5 font-medium text-white shadow-xs focus:ring-4 focus:outline-none;
+  }
+  .blue-gradient_text {
+    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+  }
+  .btn-back {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: inherit;
+    height: inherit;
+    transition: 250ms;
+    transform-style: preserve-3d;
+    transform-origin: bottom right;
+    transform: rotateZ(15deg);
+    will-change: transform;
+    box-shadow: 16px 0 40px #e4e4e4;
+  }
+  .btn-front {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: inherit;
+    height: inherit;
+    background-color: #ffffff33;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: 250ms;
+    transform-style: preserve-3d;
+    transform-origin: top left;
+    overflow: hidden;
+  }
+  .block-container {
+    position: relative;
+
+    &:hover > .btn-back {
+      transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
+    }
+    &:hover > .btn-front {
+      transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+    }
   }
 }
