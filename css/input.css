@@ -16,8 +16,6 @@
   --font-worksans: "worksans", "sans-serif";
   --font-poppins: "poppins", "sans-serif";
 
-  --shadow-card: "0px 1px 2px 0px rgba(0, 0, 0, 0.05)";
-
   --color-blue-1000: #2b77e7;
   --color-black-1000: #000;
   --color-black-1100: #1d2235;
@@ -26,7 +24,10 @@
 /* custom components */
 @layer {
   .blue-btn {
-    @apply font-poppins bg-blue-1000 hover:bg-brand-strong focus:ring-brand-medium rounded-base box-border border border-transparent px-4 py-2.5 text-sm leading-5 font-medium text-white shadow-xs focus:ring-4 focus:outline-none;
+    @apply  font-poppins bg-blue-1000 hover:bg-brand-strong focus:ring-brand-medium rounded-base box-border border border-transparent px-4 py-2.5 text-sm leading-5 font-medium text-white shadow-xs focus:ring-4 focus:outline-none;
+  }
+  .card-btn{
+@apply    bg-brand hover:bg-brand-strong focus:ring-brand-medium rounded-base box-border inline-flex items-center border border-transparent px-3 py-2 text-sm leading-5 font-medium text-white shadow-xs focus:ring-4 focus:outline-none
   }
   .blue-gradient_text {
     @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
