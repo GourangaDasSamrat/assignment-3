@@ -355,6 +355,9 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -417,6 +420,9 @@
   }
   .flex-1 {
     flex: 1;
+  }
+  .grow {
+    flex-grow: 1;
   }
   .origin-\[0\] {
     transform-origin: 0;
